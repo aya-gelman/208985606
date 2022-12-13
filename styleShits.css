@@ -1,0 +1,293 @@
+*{
+    background-color:azure;
+    font-family:Arial, Helvetica, sans-serif; 
+    color: black;
+} 
+h1{
+    text-align: center;
+}
+
+h3{
+    background-color: rgb(143, 201, 220) ;
+}
+
+h4{
+    background-color: rgb(143, 201, 220);
+    text-align: right; 
+} 
+
+p{
+    background-color:azure; 
+}  
+.title{
+    background-color:rgb(193, 225, 236);
+    font-size:x-large;
+}
+
+.PMainPage{
+    background-color:rgb(193, 225, 236);
+}
+
+ul{
+    background-color:rgb(193, 225, 236);
+}
+
+li{
+    background-color:rgb(193, 225, 236);
+}
+
+.div-img{ 
+   justify-content: center; 
+   align-items: center; 
+   display:flex; 
+   padding-top: 20%;
+   background-color:   rgb(193, 225, 236);
+} 
+
+
+img{
+    transition: transform .2s; 
+    width: 50px; 
+    height: 50px; 
+    margin:0 auto; 
+    border-radius: 10px; 
+    border: 1px solid rgb(100, 100, 167); 
+}
+ img:hover{
+    transform: scale(2.5); 
+
+ }
+.grid_continer{
+display: grid;
+grid-template-columns: 240px auto auto;
+grid-template-rows: 240px 250px 250px;
+}
+
+header{ /*genarl styling for title */
+    background-color: rgb(143, 201, 220);
+    padding: 11px; 
+    text-align: center;
+    font-size: 35px;
+    
+    }
+
+article{
+    background-color: azure;
+    grid-column: 1/ span 4;
+    grid-row: 2/ span4; 
+    padding: 10px; 
+    text-align:center;
+    font-size: 20px;  
+    display: block; 
+
+} 
+
+
+.mainTitle{
+background-image: url(main_pic_bar.jpg);
+grid-column: 2/ span 4;
+grid-row: 1/1;
+background-size: 100% 100%;
+animation: anim ease-in-out 20s infinite;
+} 
+@keyframes anim {  /* order that responsbile for animation in the main title*/
+    0%{
+        background-image: url(main_pic_bar.jpg);
+    } 
+
+    25% {
+        background-image: url(main_pic_bar_2.jpg);
+    }
+    50%{
+        background-image: url(main_pic_bar_3.jpg);
+    }
+
+    75%{
+        background-image: url(main_pic_bar_4.jpg);
+    }
+
+    100%{
+    background-image: url(main_pic_bar.jpg);
+    }
+}
+
+.introduction{
+background-color: rgb(193, 225, 236) ;
+grid-column: 1/span 1;
+grid-row: 1/4;  
+text-align: center; 
+font-family: arial;
+} 
+
+.login{
+    grid-column:  2/span 3;
+    grid-row: 2/ span 4;
+    background-color: azure;
+    text-align: center; 
+}
+.button { /*unic button for the menu page */
+            
+    background-color: lightskyblue; 
+    border: 15px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    left: 500px;
+} 
+
+.genral_button{ /* */
+    border-radius: 15px;
+    background-color: lightskyblue;
+    width: 200px;
+    height: 30px;
+    position:relative;
+    left: 350px; 
+    text-align: center;
+    z-index: 1; 
+    left: 0px;
+} 
+
+.genral_button::after {
+    content:" "; 
+    position: absolute;
+    top:0%; 
+    left:0%;
+    border-radius: 15px;
+    width: 200px; 
+    height: 30px; 
+    background: lightpink;
+    z-index: -3;
+    transform: scaleX(0);
+    transform-origin: left; 
+    transition: transform 200ms ease-in;
+} 
+
+.genral_button:hover::after {
+    transform: scaleX(1);
+}
+
+.fancy-link /* styling of the links in the web*/
+{
+    text-decoration: none;
+    color: lightcoral;
+    position: relative;
+    left: 20px; 
+}
+
+
+.fancy-link::after{ /* define the line under the link*/
+    content: " ";
+    position: absolute; 
+    left:0; 
+    bottom: 0;
+    width: 660px;
+    height: 3px;
+    background: currentColor; 
+    transition: transform 160ms ease-in;
+    transform: scaleX(0); /* define the line position reletive to the link*/
+} 
+
+.fancy-link:hover::after{ /*Extension of the line while hovering the link*/
+    transform: scaleX(1); /*define the new size of the line */
+}
+
+.formBTN{
+    left:100px;
+} 
+
+.registerBTN{
+    left: 300px;
+} 
+
+.mainMenuBTN{
+    left: 500px;
+} 
+.PInForm{
+    text-align: right ;
+} 
+
+.mangerOptions{
+    background-color: rgb(198, 70, 70);
+    left: 500px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  } 
+  td, th { /*define the line in the table*/
+    border: 5px solid rgb(134, 126, 126);
+    text-align: center;
+    padding: 8px;
+  } 
+
+  #logInForm{
+    align-items: center; 
+    align-content: center;
+
+  }
+  
+button{
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+} 
+/* demo */
+form label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+
+.genral_picture{
+    height: 200px; 
+    width: 200px; 
+    align-items: center; 
+    align-content: center; 
+}
+
+/*
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,label {
+    margin: .4rem 0;
+}
+/*
+.text {
+    width: 12px;
+    height: 10px;
+}
+
+.articleButton{
+    align-items: center;
+    grid-column:  2/span 3;
+    grid-row: 2/ span 4;
+
+}
+
+ /*.button{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px
+} 
+

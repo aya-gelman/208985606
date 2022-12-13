@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>רישום למערכת</title>
+        <link rel="stylesheet" href="styleShits.css">
+        <script src="JavaScript.js"> </script>
+    </head> 
+
+    <body>
+        <header>
+            <h3> בואו נתחיל</h3>
+        </header> 
+
+            <br>
+           <p style="text-align:center ;"> <b> עובד/ת יקר/ה, אנא מלא/י את הפרטים הבאים </b></p> <br><br>
+           <article>
+
+            <form name="registerForm" action="registration_confirmation_page.html" 
+            onsubmit="return registerValidation(document.registerForm.phone,
+             document.registerForm.privateName, document.registerForm.privateName, 
+             document.registerForm.secondName)">
+                
+                <!-- phone fill area-->
+                <labal for="phone"> מספר טלפון</labal>  
+                <input type= "text" id="phone" name="phone" required> 
+
+                <br> <br>
+                <!--private name fill area-->
+                <labal for="privateName"> שם פרטי </labal> 
+                <input type="text" id="privateName" name="privateName" required> <br><br>
+
+                <!--second name fill area -->
+                <labal for="secondName"> שם משפחה</labal> 
+                <input type="text" id="secondName" name="secondName" required> <br><br> 
+
+                <label for="companies">מקום עבודה</label>
+                <select id="companies" name="companies">
+                     <option value="company1"> חברה 1</option>
+                     <option value="company2">חברה2</option>
+                     <option value="company3">חברה 3</option>
+                     <option value="company4">חברה 4</option>
+                </select> <br><br>
+
+                <button class="genral_button">  צור  </button>
+            
+                <br><br>
+                <a class="fancy-link" href=" http://wa.me/+972546138555 " target="_blank" > צריך/ה עזרה? מוזמנים לפנות אלינו בוואטספ, והנציגים שלנו ישמחו לעמוד לשירותכם</a>
+            </form>
+            </article>
+
+             
+    </body>
+</html>

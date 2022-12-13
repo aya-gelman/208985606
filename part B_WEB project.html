@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <title>מערכת לסידור משמרות עבודה</title>
+        <link rel="stylesheet" href="styleShits.css">
+        <script src="JavaScript.js"> </script>
+    </head> 
+
+    <body>
+
+        <div class="grid_continer"> <!--class that dividing the screen 3*3 -->
+            <div class="mainTitle"></div> <!--the area of the title in the page--> 
+            <div class="introduction" id="intro"> <!-- intoduction paragrph-->
+                <p class="PMainPage" id="PMainPage"> 
+                    
+                <strong class="title" id=" title">קצת עלינו</strong> <br>
+                <ul>
+                <li>תנו לנו לדאוג לניהול ושיבוץ משמרות העבודה </li> <br>
+                <li >בזכותינו תהנו מסידור האופטימלי ביותר</li> <br>
+                <li>בזכותינו יחסך לכם זמן ואנרגיות רבות שמבוזבזות היום על סידור העבודה</li>
+                </ul> 
+                <br>
+                <strong class="title">הצטרפו למשפחה</strong> <br> 
+                עבור על התמונה לצפייה בלקוחות שלנו 
+                <div class="div-img"> 
+                    <img src="max_brener_logo.PNG">
+                    <img src="jessica_logo.PNG">
+                </div>
+                <div class="div-img"> 
+                    <img src="flirentina_logo.PNG">
+                    <img src="concpto_logo.PNG">
+                </div> 
+            </div>
+
+            <div class="login" id="logIN">
+
+                <h1> <b>בואו נתחיל לסדר את הלוז </b></h1> <br></br>
+
+                    <form name="logInForm"  onsubmit="return allnumeric(document.logInForm.phone)" action="menu_page.html" > 
+                    <labal for="phone"> הזן מספר טלפון</labal> 
+                    <input type="text" id="phone" name="phone" type="number"  placeholder="phone" required> <br><br><br>
+                    <button  type="submit" class="genral_button" id="enter">  כניסה  </button>
+                    </form>
+                
+                       <br><br>
+                 
+                 <a href="register_page.html" target="_blank" id="newWorker"> <div class="genral_button registerBTN">יצירת עובד חדש</div> </a>  
+                 <br><br>
+                 <button type="button" onclick="changeBackGroundColor()" class="genral_button">הפרד בין צבעי הלחצנים</button>
+            </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head> 
+        <title> הגשת אילוצי עובד </title> 
+        <link rel="stylesheet" href="styleShits.css"> 
+    </head>
+
+    <body> 
+        <header> <h3> הגשת אילוצי עובד </h3></header>
+
+        <form>
+            <h4> בחירת מקום עבודה</h4>
+            <p class="PInForm">
+           <b> במידה ואת/ה עובדים ביותר ממקום עבודה אחד בחר/י את מקום העבודה אליו תרצה להשתבץ </b>
+            </p>
+            <br>
+            <label for="workPlace">מקום עבודה</label>
+                <select id="workPlace" name="workPlace" >
+                 <option value="workplace1"> מקום עבודה 1</option>
+                 <option value="workplace2">מקום עבודה 2</option>
+                 <option value="workplace3">מקום עבודה 3</option>
+                 </select>
+
+            <h4>בחירת תפקידים</h4>
+            <p class="PInForm"> 
+              <b>  סמן/י את התפקיד/ים אליהם תרצה להגיש משמרות  </b>
+            </p> 
+            <div algin="right"> <!-- the bulates for choocing the roles-->
+            <input type="checkbox" id="role" name="role1" value="waiter">
+            <label for="role1">מלצר/ית</label> 
+            <input type="checkbox" id="role" name="role2" value="cooker">
+            <label for="role2"> טבח/ית</label> 
+            <input type="checkbox" id="role" name="role3" value="bartender">
+            <label for="role3">ברמן/ית</label> 
+            <input type="checkbox" id="role" name="role4" value="selector">
+            <label for="role4">סלקטור/ית</label>
+            <input type="checkbox" id="role" name="role5" value="keeper">
+            <label for="role5">מאבטח/ת</label>
+            <input type="checkbox" id="role" name="role6" value="manager">
+            <label for="role6">מנהל/ת</label>
+        
+            </div>
+
+        <h4>משמרות</h4>
+            
+        <p class="PInForm">
+            <label for="workDate"> <b> בחר/י תאריך</b> </label>
+            <input type="date" id="workDate" name="workDate">
+            
+            <p class="PInForm" > 
+              <b> הגדר/י טווח שעות </b> <br><br>
+               <label for="startTime">שעת התחלה</label>
+
+               <input type="time" id="appt" name="appt"
+                      min="17:00" max="2:00" required>
+               
+               <br><br>
+            
+            <label for="finishTime">שעת סיום</label>
+
+               <input type="time" id="appt2" name="appt2"
+                      min="23:00" max="6:00" required>
+                     
+            </p>             
+        </form>
+        
+        <div class="genral_button formBTN"> שמירה</div> <br>
+        <a href="sum_of_worker_constraints.html"> <div class="genral_button formBTN"> סיכום הגשות</div> </a>
+        <br>
+        <a href="menu_page.html"> <div class="genral_button formBTN"> מסך ראשי</div> </a>
+        
+    </body>
+</html>
